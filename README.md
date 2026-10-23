@@ -4,8 +4,8 @@ Reproductor gratuito, sin vencimiento y con aportes voluntarios. No incluye cana
 
 ## Descargar
 
-- [Instalador oficial Comunidad 1.0.2](https://github.com/faqunditto-byte/stream-player-comunidad/releases/download/community-v1.0.2/Stream-Player-Comunidad-Setup-1.0.2.exe)
-- [Archivos y notas de la versión](https://github.com/faqunditto-byte/stream-player-comunidad/releases/tag/community-v1.0.2)
+- [Instalador oficial Comunidad 1.0.3](https://github.com/faqunditto-byte/stream-player-comunidad/releases/download/community-v1.0.3/Stream-Player-Comunidad-Setup-1.0.3.exe)
+- [Archivos y notas de la versión](https://github.com/faqunditto-byte/stream-player-comunidad/releases/tag/community-v1.0.3)
 
 Comunidad se instala aparte de IPTV Player y usa sus propios datos y cuentas. Si ya tenés Comunidad 1.0.0 o 1.0.1, instalá esta versión encima una vez, sin desinstalar, para activar el canal de actualizaciones. No reemplaza la edición paga ni necesita un código de activación.
 
@@ -21,6 +21,8 @@ El catálogo fijo es [community-updates.json](https://raw.githubusercontent.com/
 
 ## Integridad de la versión oficial
 
+Desde 1.0.3, el control de integridad, el verificador de actualizaciones y la apertura de PayPal se distribuyen como módulos nativos de Windows, sin una copia Python de respaldo de esas partes. Esto dificulta extraerlas y modificarlas directamente; no impide crear otra app parecida, con o sin ayuda de una IA.
+
 La app comprueba la firma del manifiesto y sus archivos al iniciar y vuelve a comprobar el ejecutable antes de abrir PayPal. Si detecta archivos modificados o incompletos, bloquea el inicio y pide reinstalar desde la fuente oficial.
 
 Esto no hace imposible crear una copia modificada eliminando los controles. El instalador todavía no tiene firma Authenticode con un certificado reconocido por Windows: la firma propia no elimina avisos de SmartScreen ni identifica al editor para Windows.
@@ -28,7 +30,7 @@ Esto no hace imposible crear una copia modificada eliminando los controles. El i
 En los archivos de la versión se incluyen el instalador, metadatos firmados y un verificador independiente. Para comprobar una descarga con el script, descargar `Verificar-Descarga-Comunidad.ps1` y `comunidad-release-signed.json` en la misma carpeta y ejecutar:
 
 ```powershell
-./Verificar-Descarga-Comunidad.ps1 -Archivo ./Stream-Player-Comunidad-Setup-1.0.2.exe
+./Verificar-Descarga-Comunidad.ps1 -Archivo ./Stream-Player-Comunidad-Setup-1.0.3.exe
 ```
 
 Obtener siempre el script y sus metadatos desde este repositorio oficial. El verificador comprueba la firma propia y el SHA-256 y muestra aparte el estado de Authenticode.
