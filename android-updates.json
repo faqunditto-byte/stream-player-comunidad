@@ -1,8 +1,8 @@
 {
   "android": {
-    "version": "0.1.16",
-    "versionCode": 17,
-    "url": "https://github.com/faqunditto-byte/stream-player-iptv-updates/releases/download/android-v0.1.16/Stream-Player-IPTV-Android-0.1.16-Prueba.apk",
-    "sha256": "364c71ebd2cb72daeb8cbd1bb0f169c173ac0a5546cf3c247597547a9e1c00ba"
+    "version": "0.1.17",
+    "versionCode": 18,
+    "url": "https://github.com/faqunditto-byte/stream-player-iptv-updates/releases/download/android-v0.1.17/Stream-Player-IPTV-Android-0.1.17-Prueba.apk",
+    "sha256": "7ac0a283526e24076fd90250380cf1fe9f8d8556dbb9a0268d19d43d0059bb7d"
   }
 }
